@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:loadBundle basename="ch.hearc.ig.odi.peoplelist.presentation.bundle.Resources_fr" var="msg"/>
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <label>#{msg.gender}</label><br/>
+            <h:selectOneMenu value="#{peopleAddBean.gender}">
+                <f:selectItem itemValue="male" itemLabel="M." />
+                <f:selectItem itemValue="femal" itemLabel="Mme." />	   							
+            </h:selectOneMenu>
+            <label>#{msg.firstname}</label><br/>
+            <h:inputText value="#{peopleAddBean.firstName}"/><br/>
+            <label>#{msg.lastname}</label><br/>
+            <h:inputText value="#{peopleAddBean.lastName}"/><br/>
+            <label>#{msg.married}</label><br/>
+            <h:selectBooleanCheckbox value="#{peopleAddBean.married}"/><br/>
+            <label>#{msg.date}</label><br/>
+            <h:inputText value="#{peopleAddBean.birthDate}">
+                <f:convertDateTime pattern="dd.MM.yyyy"/>
+            </h:inputText><br/>
+            <h:commandButton value="Ajouter" action="#{peopleAddBean.addPeople()}"/><br/>
+        </h:form>
+    </h:body>
+</html>
+

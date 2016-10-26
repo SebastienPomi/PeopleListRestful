@@ -5,9 +5,12 @@
         <group>
             <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/src/java/ch/hearc/ig/odi/peoplelist/presentation/beans/PeopleListBean.java</file>
             <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/src/java/ch/hearc/ig/odi/peoplelist/presentation/bundle/Resources_en.properties</file>
+            <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/src/java/ch/hearc/ig/odi/peoplelist/service/Services.java</file>
             <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/src/java/ch/hearc/ig/odi/peoplelist/presentation/bundle/Resources_fr.properties</file>
             <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/src/java/ch/hearc/ig/odi/peoplelist/business/Person.java</file>
             <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/web/index.xhtml</file>
+            <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/web/resources/css/style.css</file>
+            <file>file:/D:/3eme/semestre1/odi/serie4/PeopleList/web/form.xhtml</file>
         </group>
     </open-files>
 </project-private>
