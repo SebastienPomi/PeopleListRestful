@@ -2,5 +2,6 @@ table{
     border-collapse: collapse;
 }
 td,th{
-    border: 5px solid blue;
+    border: 1px solid black;
+    width: 70px;
 }
