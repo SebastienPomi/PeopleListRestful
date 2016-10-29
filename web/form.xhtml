@@ -5,26 +5,35 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <f:loadBundle basename="ch.hearc.ig.odi.peoplelist.presentation.bundle.Resources_fr" var="msg"/>
     <h:head>
-        <title>Facelet Title</title>
+        <title>#{msg.title}</title>
     </h:head>
     <h:body>
         <h:form>
             <label>#{msg.gender}</label><br/>
-            <h:selectOneMenu value="#{peopleAddBean.gender}">
+            <h:selectOneMenu value="#{peopleBean.gender}">
                 <f:selectItem itemValue="male" itemLabel="M." />
-                <f:selectItem itemValue="femal" itemLabel="Mme." />	   							
+                <f:selectItem itemValue="female" itemLabel="Mme." />	   							
             </h:selectOneMenu><br/>
             <label>#{msg.firstname}</label><br/>
-            <h:inputText value="#{peopleAddBean.firstName}"/><br/>
+            <h:inputText value="#{peopleBean.firstName}"
+                         required="true"
+                         requiredMessage="#{msg.firstname} #{msg.required}"
+                         maxlength="50"/><br/>
             <label>#{msg.lastname}</label><br/>
-            <h:inputText value="#{peopleAddBean.lastName}"/><br/>
+            <h:inputText value="#{peopleBean.lastName}"
+                         required="true"
+                         requiredMessage="#{msg.lastname} #{msg.required}"
+                         maxlength="50"/><br/>
             <label>#{msg.married}</label><br/>
-            <h:selectBooleanCheckbox value="#{peopleAddBean.married}"/><br/>
+            <h:selectBooleanCheckbox value="#{peopleBean.married}"/><br/>
             <label>#{msg.date}</label><br/>
-            <h:inputText value="#{peopleAddBean.birthDate}">
+            <h:inputText value="#{peopleBean.birthDate}"
+                         required="true"
+                         requiredMessage="#{msg.date} #{msg.required}"
+                         maxlength="10">
                 <f:convertDateTime pattern="dd.MM.yyyy"/>
             </h:inputText><br/>
-            <h:commandButton value="Ajouter" action="#{peopleAddBean.addPeople()}"/><br/>
+            <h:commandButton value="Ajouter" action="#{peopleBean.addPeople()}"/><br/>
         </h:form>
     </h:body>
 </html>
