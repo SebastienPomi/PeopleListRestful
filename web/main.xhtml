@@ -6,13 +6,13 @@
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet name="/css/default.css"/>
-        <h:outputStylesheet name="/css/cssLayout.css"/>
+        <h:outputStylesheet name="css/default.css"/>
+        <h:outputStylesheet name="css/cssLayout.css"/>
         <title>Facelets Template</title>
     </h:head>
 
     <h:body>
-
+        
         <div id="top" class="top">
             <ui:insert name="top">Top</ui:insert>
         </div>
@@ -20,7 +20,10 @@
         <div id="content" class="center_content">
             <ui:insert name="content">Content</ui:insert>
         </div>
-
+        
+        <div id="bottom" class="bottom">
+            <ui:insert name="bottom"> Bottom</ui:insert>
+        </div>
     </h:body>
 
 </html>
